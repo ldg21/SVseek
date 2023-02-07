@@ -1,0 +1,36 @@
+Package: SVseek
+Title: Structural variant analysis for candidate genes
+Version: 0.0.4
+Authors@R: c(
+    person("Dan", "Shea",
+        email = "danshea00@gmail.com",
+	role = c("aut")),
+    person("Leonard", "Goldstein",
+        email = "ldgoldstein@gmail.com",
+	role = c("cre", "aut")))
+Description: The `SVseek` package analyses structural variants in candidate genes from genomic sequencing data. The software was developed for stranded data generated with a single-primer extension approach, but also supports non-stranded data from other assays. The package detects breakpoints from split reads and calculates variant allele fractions (VAFs).
+License: Artistic-2.0
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+biocViews: StructuralVariation
+Imports:
+    BiocGenerics,
+    GenomicAlignments,
+    GenomeInfoDb,
+    IRanges,
+    Rsamtools
+Depends:
+    GenomicRanges,
+    R (>= 4.2.0)
+Suggests:
+    BiocStyle,
+    biovizBase,
+    ggbio,
+    knitr,
+    profvis,
+    rmarkdown,
+    testthat (>= 3.0.0)
+LazyData: true
