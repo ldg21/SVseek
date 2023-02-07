@@ -1,6 +1,6 @@
 Package: SVseek
 Title: Structural variant analysis for candidate genes
-Version: 0.0.4
+Version: 0.99.0
 Authors@R: c(
     person("Dan", "Shea",
         email = "danshea00@gmail.com",
